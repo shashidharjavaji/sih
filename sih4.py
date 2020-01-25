@@ -1,3 +1,17 @@
+-*- coding: utf-8 -*-
+import nltk
+from nltk.corpus import state_union
+from nltk.tokenize import PunktSentenceTokenizer
+# nltk.download('all')
+import random
+import numpy as np
+from array import array
+from playsound import playsound
+from gtts import gTTS
+import os
+#custom_sent_tokenizer = PunktSentenceTokenizer(train_text)
+#tokenized = custom_sent_tokenizer.tokenize(sample_text)
+import speech_recognition as sr
 def stt():
     x=sr.Recognizer()
     with sr.Microphone() as source:
